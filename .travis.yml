@@ -1,7 +1,6 @@
 dist: trusty
 language: python
-addons:
-  chrome: stable
+
 before_script: 
  - wget -N https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip -P ~/
  - unzip ~/chromedriver_linux64.zip -d ~/
@@ -9,5 +8,6 @@ before_script:
  - sudo mv -f ~/chromedriver /usr/local/share/
  - sudo chmod +x /usr/local/share/chromedriver
  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
- - apt-get install google-chrome-stable
+ - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+ - sudo dpkg -i google-chrome-stable_current_amd64.deb
 script: python main.py
