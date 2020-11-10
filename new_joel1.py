@@ -7,6 +7,8 @@ import pandas as pd
 import os
 from time import sleep
 chrome_options = webdriver.ChromeOptions()
+chrome_options.binary_location = os.environ.get("GOOGLE_CHROME_BIN")
+chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
 chrome_options.add_experimental_option('useAutomationExtension', False)
 chrome_options.add_argument('--disable-blink-features=AutomationControlled')
