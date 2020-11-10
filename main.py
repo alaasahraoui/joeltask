@@ -35,6 +35,6 @@ for i in range(1,7):
 my_dataframe = pd.DataFrame({'Question' :questions,'Question_body' :body},) 
                                 
 my_dataframe.to_csv("questions.csv")
-my_dataframe.to_excel("questions.xlsx")
+
 
 driver.quit()
