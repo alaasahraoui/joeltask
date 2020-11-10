@@ -9,4 +9,5 @@ before_script:
  - sudo mv -f ~/chromedriver /usr/local/share/
  - sudo chmod +x /usr/local/share/chromedriver
  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+ - sudo apt-get install google-chrome-stable
 script: python main.py
