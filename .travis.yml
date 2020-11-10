@@ -11,7 +11,7 @@ before_script:
  - cat /etc/apt/sources.list.d/google-chrome.list
  - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
  - sudo apt update
- - sudo apt upgrade
+
 
 
 script: python main.py
