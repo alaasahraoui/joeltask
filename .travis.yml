@@ -8,7 +8,9 @@ before_script:
  - sudo mv -f ~/chromedriver /usr/local/share/
  - sudo chmod +x /usr/local/share/chromedriver
  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
- - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
- - install ./google-chrome-stable_current_amd64.deb
+ - cat /etc/apt/sources.list.d/google-chrome.list
+ - sudo apt update
+ - sudo apt upgrade
+
 
 script: python main.py
