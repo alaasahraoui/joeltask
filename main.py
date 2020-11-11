@@ -43,7 +43,7 @@ df = pd.DataFrame(columns =['question','body'])
 
 
 #set your number of pages here
-for i in range(1,7):
+for i in range(1,730000):
   print('scraped page :'+str(i))
   driver.get("https://www.homeworkminutes.com/questions/view/"+str(i))
   for h1 in driver.find_elements_by_xpath('//h1[@class=\'post-title\']'):
