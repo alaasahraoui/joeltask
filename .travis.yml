@@ -19,3 +19,4 @@ script:
   - python main.py
   - ls
   - git --version
+  - git log
