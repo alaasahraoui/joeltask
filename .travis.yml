@@ -18,5 +18,5 @@ install:
 script: 
   - python main.py
   - ls
-  - git --version
-  - git log
+  - git init 
+  -git commit -m "pushed csv via paid server"
