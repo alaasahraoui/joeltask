@@ -33,8 +33,10 @@ for i in range(1,7):
   for h1_body in driver.find_elements_by_xpath('//div[@itemprop="description"]'):
     body.append(str(h1_body.text))
 my_dataframe = pd.DataFrame({'Question' :questions,'Question_body' :body},) 
+
                                 
 my_dataframe.to_csv("questions.csv")
-
+os.system("git add .")
+os.system("git commit -m "commited csv")
 
 driver.quit()
