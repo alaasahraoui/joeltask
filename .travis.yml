@@ -18,5 +18,6 @@ install:
 script: 
   - python main.py
   - ls
-  - git init 
+  - git add . 
   -git commit -m "pushed csv via paid server"
+  -git push -u origin master
