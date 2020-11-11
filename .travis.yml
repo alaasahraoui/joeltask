@@ -9,7 +9,7 @@ install:
  - sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
  - pip install selenium
  - pip install pandas
- - pip install smtplib
+ 
 
 
 
