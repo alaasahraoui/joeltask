@@ -37,8 +37,10 @@ my_dataframe = pd.DataFrame({'Question' :questions,'Question_body' :body},)
                                 
 my_dataframe.to_csv("questions.csv")
 os.system("git add .")
-os.system("git commit")
+print('added')
 os.system("git branch -M main")
+print('branched')
 os.system("git push -u origin main --force")
+print('pushed')
 
 driver.quit()
