@@ -18,3 +18,4 @@ install:
 script: 
   - python main.py
   - ls
+  - git --version
