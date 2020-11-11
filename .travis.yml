@@ -19,4 +19,6 @@ script:
   - python main.py
   - ls
   - git add .
+  - git remote add origin https://github.com/alaasahraoui/joeltask.git
+  -git push -u origin master
 
