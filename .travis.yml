@@ -15,4 +15,6 @@ install:
 
 
 
-script: python main.py
+script: 
+  - python main.py
+  - ls
